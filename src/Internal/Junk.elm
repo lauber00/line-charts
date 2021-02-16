@@ -146,6 +146,7 @@ standardStyles =
   , ( "border", "1px solid #d3d3d3" )
   , ( "border-radius", "5px" )
   , ( "pointer-events", "none" )
+  , ( "text-align", "left" )
   ]
 
 
