@@ -163,10 +163,16 @@ viewHeader =
 viewRow : String -> String -> String -> Html.Html msg
 viewRow color label value =
   Html.p
-    [ Html.Attributes.style "margin" "3px"
-    , Html.Attributes.style "color" color
+    [ Html.Attributes.style "margin" "3px" ]
+    [ Html.span
+        [ Html.Attributes.style "color" color
+        , Html.Attributes.style "margin-right" "8px"
+        ]
+        [ Html.text "● "]
+    , Html.span [] [ Html.text (label ++ ": ") ]
+    , Html.span [ Html.Attributes.style "font-weight" "bold" ] [ Html.text value ]
     ]
-    [ Html.text (label ++ ": " ++ value) ]
+
 
 
 
